@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Chinhtkt's BG",
+    "description": "Ramdom change color",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/funny-face.png",
+            "32": "/images/funny-face.png",
+            "48": "/images/funny-face.png",
+            "128": "/images/funny-face.png"
+        }
+    },
+    "icons": {
+        "16": "/images/funny-face.png",
+        "32": "/images/funny-face.png",
+        "48": "/images/funny-face.png",
+        "128": "/images/funny-face.png"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+   
+}
