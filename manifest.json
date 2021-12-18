@@ -1,0 +1,25 @@
+{
+    "name": "CRM prototype",
+    "description": "Prototype version",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons" : {
+        "16": "./images/funny-face.png",
+        "32": "./images/funny-face.png",
+        "48": "./images/funny-face.png",
+        "128": "./images/funny-face.png"
+    },
+    "background": {
+        "scripts": ["./background/background.js"],
+        "persistent": false
+    },
+    "options_page": "./options.html",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "https://*.www.messenger.com/*",
+        "storage"
+    ]
+}
